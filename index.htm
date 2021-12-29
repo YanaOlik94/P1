@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>P1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.angularjs.org/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    
+    <div class="wrapper" ng-controller="MyController">
+        <form class="form-signin">
+            <h2 class="form-signin-heading">Enter your name and lastname</h2>
+            <input type="text" class="form-control" ng-model='name'>
+            <input type="text" class="form-control" ng-model='lastname'>
+            <input id="checkbox" type="checkbox" <label> Remember me </label>  
+            <button class="btn btn-block btn-lg btn-primary" ng-click='alertFn()'>Confirm</button>
+            <p><span class="exp"> Welcome {{ name + " " + lastname}} <span/> </p>
+        </form> 
+    </div>
+
+  </body>
+</html>
